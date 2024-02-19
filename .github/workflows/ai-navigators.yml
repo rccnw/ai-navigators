@@ -33,7 +33,7 @@ jobs:
         azure_static_web_apps_api_token: ${{ secrets.ai_navigators_SPN }}
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         action: upload
-        deployment_environment: ${{env.DEPLOYMENT_ENVIRONMENT}}
+        #deployment_environment: ${{env.DEPLOYMENT_ENVIRONMENT}}
         app_location: ${{ env.APP_DIRECTORY }}
         api_location: ${{ env.API_DIRECTORY }}
         output_location: ${{ env.OUTPUT }}
