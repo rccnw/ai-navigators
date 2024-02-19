@@ -16,7 +16,7 @@ env:
   APP_DIRECTORY: ai-navigators
   API_DIRECTORY: ''
   OUTPUT: wwwroot
-  DEPLOYMENT_ENVIRONMENT: preview
+  # DEPLOYMENT_ENVIRONMENT: preview
 jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
@@ -33,7 +33,7 @@ jobs:
         azure_static_web_apps_api_token: ${{ secrets.ai_navigators_SPN }}
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         action: upload
-        #deployment_environment: ${{env.DEPLOYMENT_ENVIRONMENT}}
+        # deployment_environment: ${{env.DEPLOYMENT_ENVIRONMENT}}
         app_location: ${{ env.APP_DIRECTORY }}
         api_location: ${{ env.API_DIRECTORY }}
         output_location: ${{ env.OUTPUT }}
