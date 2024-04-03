@@ -396,3 +396,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/ai-navigators/wwwroot/css/bootstrap.min.css
+/ai-navigators/wwwroot/css/bootstrap.min.css.map
