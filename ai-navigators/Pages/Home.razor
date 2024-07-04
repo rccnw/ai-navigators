@@ -10,12 +10,24 @@
 
 @* style="text-align: center" *@
 
+@* <div class="topbar navbar navbar-expand-lg fixed-top bg-primary" data-bs-theme="dark"> *@
+
 <div class="topbar navbar navbar-expand-lg fixed-top bg-primary" data-bs-theme="dark">
-    <div class="heading">
-        <h1 style="color:white">AI-Navigators</h1>
+    <div class="row">
+        <div class="col-lg-4 ">
+            <div class="heading">
+                <h1 style="color:white">AI-Navigators</h1>
+            </div>
+        </div>
+        <div class="col-lg-8 ">
+            <img src="/images/ai-nav-bg.png" class="img-fluid smallish" alt="artistic image by AI">
+        </div>
     </div>
 </div>
+@* <div class="container-fluid ">
 
+    <img src="/images/ai-nav-bg.png" class="img-fluid full-width" alt="artistic image by AI">
+</div> *@
 <br />
 <br />
 
@@ -29,16 +41,35 @@
 
 <br />
 
-<a href="#" class="btn btn-info">Get Started</a>
+<a href="#" class="btn btn-info btn-width">Experience AI.</a>
+<br />
+<br />
+<a href="#" class="btn btn-info btn-width">Learn how.</a>
+<br />
+<br />
+<a href="#" class="btn btn-info btn-width">Learn about.</a>
 <br />
 <br />
 
+<div class="center-text large-bold-text">
+
+    or ask a question about this site:
+</div>
 
 
+<br />
+<br />
+<iframe	style="width: 400px; height: 600px;" src="https://app.fastbots.ai/embed/cltg0rdaf019urhb1x7xqbl53"></iframe>
+
+
+
+
+<br />
+<br />
 <!-- Full-width container -->
 <div class="container-fluid ">
 
-    <img src="/images/ai-nav-bg.png" class="img-fluid full-width" alt="artistic image by AI">
+@*     <img src="/images/ai-nav-bg.png" class="img-fluid full-width" alt="artistic image by AI"> *@
 </div>
 
 
@@ -53,9 +84,22 @@
 
 <style>
 
+
+
     .debugcolor1 {
         background-color : pink
     }
+
+    .debugcolor2{
+        background-color: cyan
+    }
+
+
+    .btn-width {
+        width: 300px;
+        height: 40px;
+    }
+
 
     .heading {
         color: white;
@@ -84,6 +128,10 @@
         height: auto; /* Maintain the aspect ratio */
     }
 
+    .smallish {
+        width: 100px; /* Scale the width to 100% of the container */
+        height: auto; /* Maintain the aspect ratio  class="img-fluid img.smallish" */
+    }
 
 .page-background {
 
